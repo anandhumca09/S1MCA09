@@ -1,0 +1,46 @@
+body{
+margin: 3%;
+background-color:wheat;
+font-family: sans-serif;
+}
+h1{
+text-align: center;
+margin-top: 10px;
+color: grey;
+}
+
+h2{
+color: white;
+background-color: black;
+padding: 10px;
+}
+
+div{
+padding:10px;
+}
+
+p{
+  border: 3px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pd{
+color: lightblue;
+}
+
+.eq{
+color: lightgreen;
+}
+
+.sk{
+color: lightgrey;
+}
+
+.hb{
+color: yellow;
+}
+
+.cc{
+color: orange;
+}

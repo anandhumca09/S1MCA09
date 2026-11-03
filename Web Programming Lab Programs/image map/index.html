@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Interactive Car Image Map</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Explore the Car</h1>
+<p>Click any part of the car to learn more about it.</p>
+<div class="car-container">
+
+<img
+src="https://img1.wallspic.com/crops/7/8/6/0/8/180687/180687-jeep_trailhawk-cars-suv-land_rover-jeep-1440x2560.jpg"
+usemap="#car-map"
+class="car-image">
+<map name="car-map">
+
+<!-- Windshield -->
+
+<area
+shape="rec"
+coords="150,200,100,150"
+href="windshield.html">
+
+<!-- Logo -->
+
+<area
+shape="poly"
+coords="110,230,140,250,160,370"
+href="logo.html">
+
+<!-- Right headlight -->
+
+<area shape="circle"
+coords="100,300,50"
+href="right-headlight.html">
+
+</map>
+</div>
+</body>
+</html>
+

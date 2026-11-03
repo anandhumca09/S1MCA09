@@ -1,0 +1,157 @@
+<!Doctype html>
+<html>
+<head>
+<title>Student Registration Form</title>
+
+<style>
+    body {
+        margin: 30px;
+        background-color: lightgrey;
+        font-family: arial;
+    }
+    
+    h1{
+    color: blue;
+    margin-top: 40px;
+    font-size: 4em;
+            color: red;
+    }
+
+    h2 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        color: blue;
+            font-size: 2em;
+
+        
+    }
+
+    input, select, textarea {
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin-right: 5px;
+    }
+
+    button {
+        margin-top: 15px;
+        margin-right: 5px;
+        padding: 5px 12px;
+        color: white;
+        background-color: black;
+    }
+    
+    form{
+    border: solid;
+    padding: 60px;
+    }
+    
+</style>
+
+</head>
+
+<body>
+
+<h1 align="center"><u>Student Registration Form</u></h1>
+
+<form action="result.html" method="GET">
+<hr>
+<h2>Personal Information</h2>
+
+<label>Full Name:</label>
+<input type="text" placeholder="name"> <br>
+
+<label>Place:</label>
+<input type="text" placeholder="Place"> <br>
+
+<label>Date of Birth:</label>
+<input type="date"> <br>
+
+<label>Address:</label>
+<textarea name="message" rows="1" cols="20"></textarea> <br>
+
+<label>Gender:</label>
+
+<label>
+    <input type="radio" name="gender" value="male"> Male
+</label>
+
+<label>
+    <input type="radio" name="gender" value="female"> Female
+</label>
+
+<label>
+    <input type="radio" name="gender" value="other"> Other
+</label>
+<br>
+
+<label>Email:</label>
+<input type="email" placeholder="Email"> <br>
+
+<hr>
+
+<h2>Educational Qualification</h2>
+
+<label>
+    <input type="checkbox" name="qualification" value="undergraduate">
+    Under Graduate
+</label>
+
+<label>
+    <input type="checkbox" name="qualification" value="postgraduate">
+    Post Graduate
+</label>
+
+<label>
+    <input type="checkbox" name="qualification" value="phd">
+    PhD
+</label>
+<br>
+
+<label>Select Courses:</label>
+
+<select>
+    <option value="">Other</option>
+    <option value="bca">BCA</option>
+    <option value="mca">MCA</option>
+    <option value="btech">Btech</option>
+    <option value="mtech">Mtech</option>
+</select>
+<br>
+
+<label>Duration:</label>
+<input type="text" placeholder="duration"> <br>
+
+<label>Year of Pass:</label>
+<input type="date"> <br>
+
+<label>Upload Document:</label>
+<input type="file" name="doc"> <br>
+
+<hr>
+
+<h2>Contact Details</h2>
+
+<label>Phone Number:</label>
+<input type="tele" placeholder="duration"> <br>
+
+<label>Password:</label>
+<input type="password"
+       name="password"
+       placeholder="Enter password"
+       minlength="8"
+       maxlength="20"
+       required>
+<br>
+
+<label>Email:</label>
+<input type="email" placeholder="Email"> <br>
+
+<button type="submit" onclick = "result.html" id="submitButton">Submit</button>
+<button type="reset" id="resetButton">Reset</button>
+
+</form>
+
+</body>
+</html>

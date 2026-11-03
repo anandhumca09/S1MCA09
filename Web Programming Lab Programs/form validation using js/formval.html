@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<style>
+body {
+font-family: Arial;
+background-color: lightgray;
+}
+.container {
+width: 300px;
+margin: 100px auto;
+background-color: white;
+padding: 20px;
+}
+h2 {
+text-align: center;
+}
+label {
+display: block;
+margin-top: 10px;
+}
+input {
+width: 95%;
+padding: 8px;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+button {
+width: 100%;
+padding: 10px;
+background-color: blue;
+color: white;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>Registration Form</h2>
+<form>
+<label>Name:</label>
+<input type="text" id="name" placeholder="Enter your name">
+<label>Mobile:</label>
+<input type="text" id="mobile" placeholder="Enter mobile number">
+<label>Email:</label>
+<input type="text" id="email" placeholder="Enter email">     
+<button type="button" onclick="validateForm()">Submit</button>
+</form>
+</div>
+
+<script>
+function validateForm() {
+// Get input values
+var name = document.getElementById("name").value;
+var mobile = document.getElementById("mobile").value;
+var email = document.getElementById("email").value;
+
+// Name validation
+if (name == "") {
+alert("Please enter your name");
+}
+else if (name.length < 3) {
+alert("Name must contain at least 3 characters");
+}
+
+// Mobile validation
+else if (mobile == "") {
+alert("Please enter your mobile number");
+}
+else if (mobile.length != 10 || isNaN(mobile)) {
+alert("Please enter a valid 10 digit mobile number");
+}
+
+// Email validation
+else if (email == "") {
+alert("Please enter your email");
+}
+else if (!email.includes("@") || !email.includes(".")) {
+alert("Please enter a valid email address");
+}
+
+// All fields are valid
+else {
+alert("Registration Successful!");
+}
+}
+</script>
+</body>
+</html>
+

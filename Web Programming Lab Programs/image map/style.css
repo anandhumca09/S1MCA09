@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #1e293b;
+}
+
+p {
+    color: #475569;
+    font-size: 17px;
+}
+
+.car-container {
+    width: 700px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.car-image {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: 200px;
+}
